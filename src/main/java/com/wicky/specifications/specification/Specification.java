@@ -12,7 +12,11 @@ public interface Specification<T> {
 	Predicate toPredicate(Root<T> root, CriteriaBuilder cb);
 	
 	Specification<T> and(Specification<T> other);
-	
+
+	Specification<T> or(Specification<T> other);
+
+	Specification<T> not();
+
 	Class<T> getType();
 
 }

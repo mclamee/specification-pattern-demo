@@ -11,6 +11,7 @@ import javax.persistence.criteria.Root;
 import java.util.List;
 
 public class BaseH2Repository {
+
     @PersistenceContext
     protected EntityManager entityManager;
 
